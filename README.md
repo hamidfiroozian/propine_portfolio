@@ -1,6 +1,7 @@
 # Portfolio Manager
-## Running App
+## Run App
  _npm install_
+ <br/>
  _npm run start:dev_
 
 ## Portfolio File
@@ -22,14 +23,15 @@ there are 5 types of Commands:
 
 # App Docs
 >this app contains 4 modules
->> - Portfolio Module : <br/>
+>> -  Portfolio Module : <br/>
 this is core module , we can manage portfolio here, <br/>
 all functionalities about portfolio implemented in this module, and we can use these functions in every modules only by importing this module <br/>
 if we need add or change function about portfolio we have to do it in this module<br/>
 also we have controllers to use these functions as http request
 <br/>
->> ## Functions 
->>> 1 - getPortfolio() => return all portfolio<br/>
+  
+>> Functions <br/> 
+>> 1 - getPortfolio() => return all portfolio<br/>
 2 - getLatestPortfolio() => return the latest portfolio <br/>
 3 - getLatestPortfolioInDate(input: Date) => return the portfolio value per token in USD on that date <br/>
 4 - getAllPortfolioTokens() => return all tokens in portfolio <br/>
@@ -46,7 +48,12 @@ when you need to have a utility function you have to define it here and you can 
 >> - Third part Module <br/>
 if you need to call third part service you have to define it in this module
 
+## .ENV
+you have to add your CRYPTOCOMPARE_API_KEY in .env file
 
+<br/>
+<br/>
+we didnt implement Api endpotints , but we can use Portfolio Module to create all kinds of apps .
 
 
 

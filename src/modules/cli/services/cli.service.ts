@@ -29,14 +29,18 @@ export class CliService {
             };
             const answer = await enquirer.prompt<question>(q);
 
-            if (answer[q.name] == 'exit') {
-                this.running = false;
-            }
+
             await this.paesrInputs(answer[q.name]);
         } while (this.running);
     }
 
     async paesrInputs(input: string) {
+        if (input == 'exit') {
+            this.running = false;
+            console.log('Portfolio manager CLI terminater');
+
+            return;
+        }
         if (input == '') {
             console.log('latest portfolio value per token in USD , waiting . . .');
             const res = await this.portfolioService.getLatestPortfolio();
