@@ -1,5 +1,6 @@
 # Portfolio Manager
 ## Running App
+ _npm install_
  _npm run start:dev_
 
 ## Portfolio File
@@ -27,7 +28,7 @@ all functionalities about portfolio implemented in this module, and we can use t
 if we need add or change function about portfolio we have to do it in this module<br/>
 also we have controllers to use these functions as http request
 <br/>
->> ###  Functions 
+>> ## Functions 
 >>> 1 - getPortfolio() => return all portfolio<br/>
 2 - getLatestPortfolio() => return the latest portfolio <br/>
 3 - getLatestPortfolioInDate(input: Date) => return the portfolio value per token in USD on that date <br/>
